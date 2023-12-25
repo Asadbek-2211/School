@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header class="bg-[#f5f5f5] py-2 shadow-xl">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <a href="./index.html" class="text-[24px] font-[700px]">Logo</a>
+          <p class="text-[24px] font-[700px]">Full Name</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex">
+      <aside
+        class="bg-[#f5f5f5] w-[137px] py-[56px] text-center shadow-xl h-screen border-solid"
+      >
+        <div class="mb-7">
+          <a href="./index.html">
+            <img
+              src="./assest/🦆 icon _3d square_.png"
+              alt=""
+              class="mx-auto bg-[#E8AD77] rounded-2xl"
+            />
+            <span class="text-[20px] text-[#E8AD77]">Dashboard</span>
+          </a>
+        </div>
+        <div class="mb-7">
+          <a href="./rooms.html">
+            <img
+              src="./assest/🦆 icon _3d square_.png"
+              alt=""
+              class="mx-auto rounded-2xl"
+            />
+            <span class="text-[20px]">Rooms</span>
+          </a>
+        </div>
+        <div class="mb-7">
+          <a href="./groups.html">
+            <img
+              src="./assest/🦆 icon _3d square_.png"
+              alt=""
+              class="mx-auto rounded-2xl"
+            />
+            <span class="text-[20px]">Groups</span>
+          </a>
+        </div>
+        <div class="mb-7">
+          <a href="./teachers.html">
+            <img
+              src="./assest/🦆 icon _3d square_.png"
+              alt=""
+              class="mx-auto rounded-2xl"
+            />
+            <span class="text-[20px]">Teachers</span>
+          </a>
+        </div>
+        <div class="mb-7">
+          <a href="./students.html">
+            <img
+              src="./assest/🦆 icon _3d square_.png"
+              alt=""
+              class="mx-auto rounded-2xl"
+            />
+            <span class="text-[20px]">Students</span>
+          </a>
+        </div>
+      </aside>
+      <main class="p-10 flex-1">
+        <div class="flex justify-end">
+          <select id="days_select" class="bg-[#eee] py-2 px-5 rounded-md">
+            <option value="1">Odd</option>
+            <option value="2">Even</option>
+          </select>
+        </div>
+        <p class="text-2xl font-bold text-[#999]" id="title">Odd Days</p>
+        <table class="w-full mt-10" id="dashboard_table">
+          <tr id="rooms_row">
+            <th class="border border-solid border-[#999] p-2"></th>
+          </tr>
+          <tbody id="tbody"></tbody>
+   
+        </table>
+      </main>
+    </div>
+    <script src="./js/dashboard.js" defer></script>
+  </body>
+</html>
