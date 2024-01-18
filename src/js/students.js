@@ -7,8 +7,9 @@ const button_4 = document.getElementById("button_4");
 const students_select = document.getElementById("students_select");
 const students_select_2 = document.getElementById("students_select_2");
 const groups = JSON.parse(localStorage.getItem("groups"));
+
 button_4.addEventListener("click", () => {
-  const students_name = students_add.value;
+  const students_name = students_add.value
   const students_weast = students_phone.value;
   if (!students_name.length || !students_weast.length) {
     alert("name yoki student numbers yozilmagan");
@@ -45,6 +46,7 @@ const renderStudents = (students = []) => {
   });
 };
 renderStudents(students);
+
 const students_search = document.getElementById("students_search");
 students_search.addEventListener("input", () => {
   const inp_val = students_search.value;
@@ -53,6 +55,7 @@ students_search.addEventListener("input", () => {
   );
   renderStudents(filtered_students);
 });
+
 const students_edit_name = document.getElementById("students_edit_name");
 const students_edit_phone = document.getElementById("students_edit_phone");
 const students_edit_btn = document.getElementById("students_edit_btn");

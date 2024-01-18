@@ -80,6 +80,6 @@ rooms_delete_btn.addEventListener("click", () => {
   const filtered_rooms = rooms.filter((t) => t.id !== rooms_id);
   localStorage.setItem("rooms", JSON.stringify(filtered_rooms));
   renderRooms(filtered_rooms);
-    rooms_edit_name.value = "";
-    rooms_edit_phone.value = "";
+  rooms_edit_name.value = "";
+  rooms_edit_phone.value = "";
 });
